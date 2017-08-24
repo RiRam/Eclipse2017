@@ -4,7 +4,6 @@
 
 # Session Data files
 .RData
-credentials.r
 
 # Example code in package build process
 *-Ex.R
@@ -32,3 +31,6 @@ vignettes/*.pdf
 # Temporary files created by R markdown
 *.utf8.md
 *.knit.md
+
+# Data Files
+*.csv
