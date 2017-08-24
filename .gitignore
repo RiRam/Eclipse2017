@@ -33,4 +33,5 @@ vignettes/*.pdf
 *.knit.md
 
 # Data Files
+credentials.r
 *.csv
