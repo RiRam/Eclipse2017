@@ -2,6 +2,7 @@ library(twitteR)
 library(dplyr)
 library(lubridate)
 library(ggmap)
+library(readr)
 
 source(file = "credentials.r")
 
@@ -21,3 +22,5 @@ eclipse_w_location <- filter(eclipse.df, !is.na(longitude)) %>%
 ggmap(get_map("United States", zoom = 3)) +
   geom_point(data = eclipse_w_location, 
              aes(x = longitude, y = latitude, color = created))
+
+write_csv(eclipse_w_location, path = "eclipsedata.csv")
